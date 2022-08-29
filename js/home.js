@@ -2,6 +2,7 @@
 let menuBtn = document.getElementById("MenuBtn");
 let menuList = document.getElementById("list");
 let listItem = document.getElementById('listItm');
+let nav= document.getElementById('navBar');
 
 
 window.onload = function () {
@@ -9,6 +10,7 @@ window.onload = function () {
         menuBtn.style.display='flex';
         listItem.style.display='none';
         menuList.setAttribute("style", "visibility:hidden")
+        nav.style.height='66px';
     }
     else {
         listItem.style.display='flex';
@@ -19,6 +21,7 @@ window.onresize = function(){
     if (window.innerWidth < 992) {
         listItem.style.display='none';
         menuList.setAttribute("style", "visibility:hidden")
+        nav.style.height='66px';
     }
     else {
         listItem.style.display='flex';
